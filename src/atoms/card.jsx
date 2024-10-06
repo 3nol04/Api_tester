@@ -24,6 +24,7 @@ const kamar = () => {
     
     return (
     <>
+    <p>sdadasda</p>
     </>
     )
 }
