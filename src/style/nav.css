@@ -1,0 +1,28 @@
+/* Untuk pseudo-elemen before
+.nav:hover a::before {
+    content: "";
+    position: absolute;
+    right: -8px;
+    top: -50px;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 35px 35px 0 10px #dae6e8;
+    pointer-events: none;
+}
+
+/* Untuk pseudo-elemen after */
+/* .nav:hover a::after,
+.nav.hovered a::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 35px -35px 0 10px var(--white);
+    pointer-events: none;
+}  */
