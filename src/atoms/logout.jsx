@@ -1,4 +1,5 @@
 import React from 'react';
+
 const Logout = React.forwardRef(({ hover, size }, ref) => {
     return (
         <svg
