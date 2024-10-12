@@ -2,8 +2,8 @@ import React from "react";
 
 const Nav = React.forwardRef(({ title, icon, nav_hover,icon_hover, link }, navRef) => {
     return (
-        <a href={link} className="w-full h-12 flex justify-start items-center group rounded-lg px-5 gap-2">
-            <div  className={`w-10 h-10 ${icon_hover} group-hover:translate-x-4 flex justify-center items-center group-hover:rounded-lg duration-500`}>
+        <a href={link} className="w-60 h-12 flex justify-start items-center group rounded-lg px-2 gap-2">
+            <div  className={`w-10 h-10 ${icon_hover} group-hover:translate-x-4 flex justify-center items-center px-6 group-hover:rounded-lg duration-500`}>
                 <div>
                     {icon}
                 </div>
