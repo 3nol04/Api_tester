@@ -1,15 +1,23 @@
 
-import Dasboard from './components/menu.jsx'
+import React,{ Suspense } from 'react'
+import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
 
+ 
+const Dasboard = React.lazy(() => import('./components/Menu.jsx'))
 function App() {
 
   return (
-    <>
-    <div className='flex justify-center'>
- 
-      <Dasboard/>
-    </div>
-    </>
+    <Router>
+      <Suspense>
+        <Routes>
+
+          <Route path="/Menu" 
+          element={<Dasboard />}/>
+
+        </Routes>
+      </Suspense>
+
+    </Router>
   )
 }
 
