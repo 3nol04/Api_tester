@@ -18,8 +18,6 @@ const Sidebar =React.forwardRef(({},ref) => {
     const nama = useRef(null);
     const imgRef = useRef(null);
     const btnnav = useRef(null);
-    let E = document.getElementById("menu");
-    console.log(E);
     useEffect(() => {
         const minimaze = minimizeRef.current;
         const handleClick = () => {
@@ -111,5 +109,4 @@ const Sidebar =React.forwardRef(({},ref) => {
         </div>
     );
 });
-
 export default Sidebar;

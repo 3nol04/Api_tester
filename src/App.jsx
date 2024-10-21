@@ -2,8 +2,9 @@
 import React,{ Suspense } from 'react'
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
 
- 
-const Dasboard = React.lazy(() => import('./components/Menu.jsx'))
+const Dasboard = React.lazy(() => import('./components/menu.jsx'))
+const Register = React.lazy(() => import('./components/Register.jsx'))
+const Login = React.lazy(()=> import ('./components/Login.jsx'))
 function App() {
 
   return (
@@ -11,8 +12,14 @@ function App() {
       <Suspense>
         <Routes>
 
-          <Route path="/Menu" 
+          <Route path="/" 
           element={<Dasboard />}/>
+
+          <Route path='/register'
+          element={<Register />}/>
+
+          <Route path='/Login'
+          element={<Login/>}/>
 
         </Routes>
       </Suspense>
