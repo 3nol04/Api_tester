@@ -62,7 +62,7 @@ const Sidebar =React.forwardRef(({},ref) => {
                     <Nav 
                         ref={menu} 
                         title="Menu" 
-                        link={"/Menu"} 
+                        link={"/"} 
                         icon={<Menu 
                             hover={"group-hover:stroke-white group-hover:fill-white "} 
                             />} 
@@ -70,7 +70,7 @@ const Sidebar =React.forwardRef(({},ref) => {
                     <Nav 
                         ref={kamar} 
                         title="Kamar" 
-                        link={"#"} 
+                        link={"/kamar"} 
                         icon={<Bed
                                 hover={"group-hover:stroke-white group-hover:fill-white"} 
                                 />} 

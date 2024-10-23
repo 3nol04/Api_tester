@@ -1,5 +1,5 @@
 import Sidebar from './sidebar.jsx'
-import Card from '../atoms/card.jsx'
+import Card from '../atoms/Card.jsx'
 import { useEffect , useState} from 'react'
 import axios from 'axios'
 
@@ -19,10 +19,11 @@ const Menu = () =>{
         getCategory()
 
     }, [])
-        console.log(category)
+       const token = localStorage.getItem('token')
+  
     return (
         <>
-            <div className="bg-primary w-screen h-screen flex justify-start items-start overflow-x-hidden scrol">
+            <div className="bg-primary w-screen h-screen flex justify-start items-start overflow-x-hidden">
                 <div className="w-auto h-auto flex justify-start items-start sticky top-0"> 
                     <Sidebar />
                 </div>
@@ -46,7 +47,7 @@ const Menu = () =>{
                     }
                     </div>
                     <div className="w-full h-auto flex flex-col   gap-4 justify-center items-start py-3 px-9">
-                        <h1 className='text-3xl py-3 font-iter text-white '>Product</h1>
+                        <h1 className='text-3xl py-3 font-iter text-white duration-500 '>Product</h1>
                         <div className="w-full h-auto grid grid-cols-5 gap-5 justify-center items-center ">
                             <Card />
                         </div>

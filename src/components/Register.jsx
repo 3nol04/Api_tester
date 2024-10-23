@@ -24,6 +24,7 @@ const RegisterForm = () => {
                     password_confirmation: confirmPassword
                 });
                 localStorage.setItem('token', response.data.token);
+                console.log(response.data.token);
                 window.location.href = "/";
             } else {
                 setError("Password Tidak Sesuai");

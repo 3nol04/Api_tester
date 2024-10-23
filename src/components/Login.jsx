@@ -7,6 +7,7 @@ const loginForm = () => {
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
     const [isLoading, setIsLoading] = useState(false);  
+    const [token, setToken] = useState("")
 
      
     const handleSubmit = async (e) => {
@@ -21,9 +22,9 @@ const loginForm = () => {
             password : password
             }
         )
-        localStorage.setItem(respose.data.token)
+        setToken(localStorage.setItem('token',respose.data.token))
         window.location.href = "/";
-    
+        console.log(token);
         } catch (error) {
             setError(error.response ? error.response.data.message : "Terjadi kesalahan");
             console.log(error)
