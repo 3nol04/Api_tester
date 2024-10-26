@@ -17,7 +17,7 @@ const loginForm = () => {
                 setError("Harap Isi Semua Data dengan lengkap");
                 return;
             }
-         const respose= await axios.post("https://api-hotel-two.vercel.app/api/api/login", {
+            const respose= await axios.post("https://api-hotel-two.vercel.app/api/api/login", {
             email : email,
             password : password
             }

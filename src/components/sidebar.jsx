@@ -78,7 +78,7 @@ const Sidebar =React.forwardRef(({},ref) => {
                     <Nav 
                         ref={admin} 
                         title="Admin" 
-                        link={"#"} 
+                        link={"/Admin"} 
                         icon={<User 
                             hover={"group-hover:stroke-white group-hover:fill-white "} 
                             />} 
@@ -95,15 +95,6 @@ const Sidebar =React.forwardRef(({},ref) => {
                     />
                 </div>
                 <div className="w-full h-36 flex justify-center items-center gap-5 px-12">
-                    <div className="w-14 h-14 flex justify-center items-center rounded-full border-2">
-                        <div className="w-14 h-14 flex justify-center items-center"></div>
-                    </div>
-                    <div className="w-full h-16 flex justify-center items-center rounded-tr-3xl">
-                        <div ref={nama} className="w-full h-16 flex flex-col justify-center items-start">
-                            <p className="text-[10px] font-mona text-white">M TRI SETIANTO</p>
-                            <p className="text-xs font-mona text-white">1234567890</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

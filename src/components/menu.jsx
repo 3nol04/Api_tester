@@ -19,8 +19,7 @@ const Menu = () =>{
         getCategory()
 
     }, [])
-       const token = localStorage.getItem('token')
-  
+        console.log(category)
     return (
         <>
             <div className="bg-primary w-screen h-screen flex justify-start items-start overflow-x-hidden">
@@ -47,7 +46,7 @@ const Menu = () =>{
                     }
                     </div>
                     <div className="w-full h-auto flex flex-col   gap-4 justify-center items-start py-3 px-9">
-                        <h1 className='text-3xl py-3 font-iter text-white duration-500 '>Product</h1>
+                        <h1 className='text-3xl py-3 font-iter text-white '>Product</h1>
                         <div className="w-full h-auto grid grid-cols-5 gap-5 justify-center items-center ">
                             <Card />
                         </div>
